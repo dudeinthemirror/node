@@ -19,7 +19,7 @@ alias mv='mv -i'
 set -o vi
 EDITOR=vi
 export EDITOR
-PS1='`echo $PWD` > '
+PS1="root@$(uname -n):$PWD > "
 
 export PS1
 
