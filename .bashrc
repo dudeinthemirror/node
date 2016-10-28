@@ -29,3 +29,4 @@ alias a='cd ..'
 alias cs='clear'
 
 mkdir -p "$HOME/.vim_bkp_files"
+cd "$HOME"
