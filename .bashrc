@@ -8,7 +8,7 @@ export SHELL=bash
 set -o vi
 EDITOR=vi
 export EDITOR
-PS1="root@$(uname -n):$PWD > "
+PS1='root@$(uname -n):$(echo $PWD) > '
 export PS1
 
 export TERM=xterm-256color
