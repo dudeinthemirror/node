@@ -4,6 +4,15 @@
 # PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
 # umask 022
 
+export SHELL=bash
+set -o vi
+EDITOR=vi
+export EDITOR
+PS1="root@$(uname -n):$PWD > "
+export PS1
+
+export TERM=xterm-256color
+
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors)"
@@ -15,17 +24,8 @@ alias l='ls $LS_OPTIONS -lA'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-set -o vi
-EDITOR=vi
-export EDITOR
-PS1="root@$(uname -n):$PWD > "
-
-export PS1
-
-export TERM=xterm-256color
-export CLICOLOR=1
-
 alias ll='ls -ltr'
 alias a='cd ..'
 alias cs='clear'
+
+mkdir -p "$HOME/.vim_bkp_files"
