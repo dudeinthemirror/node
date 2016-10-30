@@ -13,6 +13,8 @@ export PS1
 
 export TERM=xterm-256color
 
+export PATH=$PATH:/usr/bin
+
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors)"
