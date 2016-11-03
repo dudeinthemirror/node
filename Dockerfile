@@ -2,7 +2,6 @@ FROM node:6.9.1
 
 MAINTAINER dudeinthemirror
 
-COPY ./.bashrc /root/.bashrc
 COPY ./.vimrc /root/.vimrc
 
 RUN apt-key adv --keyserver pgp.mit.edu --recv D101F7899D41F3C3
